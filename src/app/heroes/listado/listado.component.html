@@ -1,0 +1,9 @@
+<p>listado works!</p>
+<div>
+    <h3 *ngIf="heroeBorrado">Heroe borrado</h3>
+    <span >{{heroeBorrado}}</span>
+</div>
+<button (click)="borrarHeroe()">borrar</button>
+<ul>
+    <li *ngFor="let heroe of heroes;let i=index"> {{heroe}} -{{i}}</li>
+</ul>
